@@ -15,7 +15,7 @@ public class NummeriererTest {
 		
 		JOptionPane option = new JOptionPane("Nummerierer Test");
 
-		int action = JOptionPane.showOptionDialog(null, "Wählen Sie:",
+		int action = JOptionPane.showOptionDialog(null, "Waehlen Sie:",
 				"OptionDialog",
 				JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
 				null, new String[] { "Buchstaben", "Zahlen" }, "Buchstaben");
