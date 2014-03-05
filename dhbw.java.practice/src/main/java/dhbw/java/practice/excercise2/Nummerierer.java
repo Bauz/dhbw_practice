@@ -4,8 +4,8 @@ public abstract class Nummerierer {
 
 	public abstract void reset();
 
-	public abstract String next();
+	public abstract String nextItem();
 
-	public abstract boolean available();
+	public abstract boolean nextItemIsAvailable();
 
 }

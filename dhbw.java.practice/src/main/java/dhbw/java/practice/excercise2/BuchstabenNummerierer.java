@@ -10,18 +10,14 @@ public class BuchstabenNummerierer extends Nummerierer{
 	}
 
 	@Override
-	public String next() {
+	public String nextItem() {
 		++buchstabe;
 		return "" + buchstabe;
 	}
 
 	@Override
-	public boolean available() {
-		if (buchstabe != 'Z') {
-			return true;
-		} else {
-			return false;
-		}
+	public boolean nextItemIsAvailable() {
+		return buchstabe != 'Z';
 	}
 
 }

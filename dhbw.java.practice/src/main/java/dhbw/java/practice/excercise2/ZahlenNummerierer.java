@@ -10,18 +10,14 @@ public class ZahlenNummerierer extends Nummerierer {
 	}
 
 	@Override
-	public String next() {
+	public String nextItem() {
 		nummer++;
 		return "" + nummer;
 	}
 
 	@Override
-	public boolean available() {
-		if (nummer < 20) {
-			return true;
-		} else {
-			return false;
-		}
+	public boolean nextItemIsAvailable() {
+		return nummer < 20;
 	}
 
 }

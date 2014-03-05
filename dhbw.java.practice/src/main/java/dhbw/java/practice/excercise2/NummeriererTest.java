@@ -10,10 +10,9 @@ public class NummeriererTest {
 	 */
 	public static void main(String[] args) {
 		
-		final ZahlenNummerierer zNummerierer = new ZahlenNummerierer();
-		final BuchstabenNummerierer bNummerierer = new BuchstabenNummerierer();
-		
-		JOptionPane option = new JOptionPane("Nummerierer Test");
+		// Polymorphismus:
+		// Nummerierer zNummerierer = new ZahlenNummerierer();
+		// Nummerierer bNummerierer = new BuchstabenNummerierer();
 
 		int action = JOptionPane.showOptionDialog(null, "Waehlen Sie:",
 				"OptionDialog",
@@ -21,9 +20,9 @@ public class NummeriererTest {
 				null, new String[] { "Buchstaben", "Zahlen" }, "Buchstaben");
 
 		if (action == 0) {
-			Schilder.beschriften(bNummerierer);
+			Schilder.beschriften(new BuchstabenNummerierer());
 		} else if (action == 1) {
-			Schilder.beschriften(zNummerierer);
+			Schilder.beschriften(new ZahlenNummerierer());
 		}
 	}
 
