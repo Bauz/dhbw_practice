@@ -7,6 +7,7 @@ public class CDRohling extends CD implements Beschreibbar {
 	}
 
 	@Override
+	// hallo
 	public void setSpieldauer(double zeit) {
 	}
 
