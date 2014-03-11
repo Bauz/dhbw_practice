@@ -9,5 +9,7 @@ public class AchtungVergleich {
         Integer x=15;
         Integer y=15;
         System.out.println(x==y);
+
+        // Byte Werte berücksichtigen
     }
 }
