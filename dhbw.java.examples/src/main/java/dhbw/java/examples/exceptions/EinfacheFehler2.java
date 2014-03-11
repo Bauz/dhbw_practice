@@ -21,6 +21,7 @@ public class EinfacheFehler2 {
 		} catch (NumberFormatException e) {
 			System.out.println("Falsches Format: " + e
 					+ " . Zahl muss vom Typ int sein!");
+
 		}
 
 
