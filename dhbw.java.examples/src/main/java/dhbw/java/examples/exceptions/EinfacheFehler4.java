@@ -19,16 +19,13 @@ public class EinfacheFehler4 {
 		int zahl;
 		try {
 			zahl = Integer.parseInt(str);
-			try {
-				erg = zahl / i;
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				System.out.println("Fehler: " + e);
-			}
+			erg = zahl / i;
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Fehler: " + e);
 		} catch (NumberFormatException e) {
 			System.out.println("Fehler: " + e);
 		}
-
 
 	}
 
