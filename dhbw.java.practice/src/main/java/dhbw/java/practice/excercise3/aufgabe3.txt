@@ -1,0 +1,10 @@
+• Könnte die abstrakte Klasse Nummerierer auch als Interface angegeben werden?
+    Ja
+
+• Wenn ja, wie würde dieses aussehen?
+    Der Klassenkopf würde wie folgt aussehen:
+    "public abstract interface Nummerierer" - das Schlüsselwort "class" wurde durch "interface" ersetzt. Das Schlüsselwort "abstract" ist optional.
+
+• Was müsste an den Klassen Schilder, ZahlenNummerierer, BuchstabenNummerierer und
+NummeriererTest geändert werden, wenn Nummerierer ein Interface wäre?
+    In den Kopfzeilen dieser Klassen müsste das Schlüsselwort "extends" durch "implements" ersetzt werden.
