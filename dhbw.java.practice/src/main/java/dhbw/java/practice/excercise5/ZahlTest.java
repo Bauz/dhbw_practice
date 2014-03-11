@@ -1,6 +1,6 @@
 package dhbw.java.practice.excercise5;
 
-import Prog1Tools.IOTools;
+//import Prog1Tools.IOTools;
 
 public class ZahlTest {
 	public static void operationenMenue(Zahl z1, Zahl z2) {
@@ -21,7 +21,8 @@ public class ZahlTest {
 
 		boolean fertig = false;
 		do {
-			int operation = IOTools.readChar("Ihre Wahl: ");
+			//int operation = IOTools.readChar("Ihre Wahl: ");
+            int operation='a';
 			switch (operation) {
 			case 'a':
 			case 'A':
