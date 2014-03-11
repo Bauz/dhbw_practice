@@ -25,6 +25,8 @@ public class EinfacheFehler4 {
 			System.out.println("Fehler: " + e);
 		} catch (NumberFormatException e) {
 			System.out.println("Fehler: " + e);
+		} finally {
+			System.out.println("Finally.");
 		}
 
 	}
