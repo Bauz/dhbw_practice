@@ -17,8 +17,12 @@ public class EinfacheFehler {
 		System.out.println("Zahl 2 eingeben: ");
 		int y = input.nextInt();
 
-		z = x / y;
-		System.out.println(z);
+		try {
+			z = x / y;
+			System.out.println("Ergebnis: " + z);
+		} catch (Exception e) {
+			System.out.println("Division unzulässig: " + e);
+		}
 
 	}
 
