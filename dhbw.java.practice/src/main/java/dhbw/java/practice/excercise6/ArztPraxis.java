@@ -1,4 +1,4 @@
-package dhbw.java.practice.exercise6;
+package dhbw.java.practice.excercise6;
 
 import Prog1Tools.IOTools;
 
