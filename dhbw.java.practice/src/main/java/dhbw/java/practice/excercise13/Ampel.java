@@ -46,10 +46,6 @@ public class Ampel extends JFrame {
 		btnGelb.setActionCommand("gelb");
 		btnGruen.setActionCommand("gruen");
 
-		radioRot.setActionCommand("rot");
-		radioGelb.setActionCommand("gelb");
-		radioGruen.setActionCommand("gruen");
-
 		btnRot.addActionListener(ampelListener);
 		btnGelb.addActionListener(ampelListener);
 		btnGruen.addActionListener(ampelListener);
