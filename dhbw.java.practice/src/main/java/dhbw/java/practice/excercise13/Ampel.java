@@ -9,6 +9,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
+import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -21,6 +22,16 @@ public class Ampel extends JFrame {
 	private AmpelListener ampelListener;
 
 	public Ampel() {
+
+		// for use under Mac
+		try {
+			// Set cross-platform Java L&F (also called "Metal")
+			UIManager.setLookAndFeel(UIManager
+					.getCrossPlatformLookAndFeelClassName());
+		} catch (Exception e) {
+			// handle exception
+		}
+
 		ampelListener = new AmpelListener();
 
 		radioRot = new JRadioButton("Rot");
