@@ -3,7 +3,7 @@ package dhbw.java.examples.testArray;
 public class Argument {
 
 	/**
-	 * @param args
+	 * Test für Agrumente, Run Configuration anpassen.
 	 */
 	public static void main(String[] args) {
 		String str0 = args[0];
