@@ -34,7 +34,6 @@ public class Rechner extends JFrame {
 		lblEquals = new JLabel();
 		lblEquals.setText("=");
 		textSolution = new JTextField();
-		
 
 		JButton btnAdd = new JButton();
 		btnAdd.addActionListener(new ActionListener() {
@@ -85,9 +84,13 @@ public class Rechner extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				checkIfTextFieldsAreEmpty();
 				lblOperator.setText("/");
-				textSolution.setText(""
-						+ (Double.parseDouble(textParameter1.getText()) / Double
-								.parseDouble(textParameter2.getText())));
+				if (textParameter2.getText().equals("0")) {
+					textSolution.setText("Div durch 0");
+				} else {
+					textSolution.setText(""
+							+ (Double.parseDouble(textParameter1.getText()) / Double
+									.parseDouble(textParameter2.getText())));
+				}
 			}
 		});
 		btnDiv.setText("Dividieren");
