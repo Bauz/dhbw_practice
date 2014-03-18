@@ -121,7 +121,8 @@ public class Rechner extends JFrame {
 		this.add(btnDiv);
 		this.add(btnDeleteAll);
 		this.setSize(500, 100);
-		this.setVisible(true);
+        this.setTitle("Rechner");
+        this.setVisible(true);
 		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 	}
