@@ -6,12 +6,13 @@ public class MainClass1 {
 		FirstThread t1 = new FirstThread();
 		System.out.println("Beginn von main");
 		t1.start();
-		try {
-			t1.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		// // Join auf Main-Strang
+		// try {
+		// t1.join();
+		// } catch (InterruptedException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
 		System.out.println("Ende von main");
 	}
 
