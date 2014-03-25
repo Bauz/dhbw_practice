@@ -40,7 +40,6 @@ public class AutomatFrame extends JFrame {
 
 	public static void main(String[] args) {
 		new AutomatFrame();
-
 	}
 	
 	public class Listeners implements ActionListener {

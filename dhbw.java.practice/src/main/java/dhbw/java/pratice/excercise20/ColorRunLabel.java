@@ -13,6 +13,7 @@ public class ColorRunLabel extends JLabel implements Runnable {
 		this.setBackground(color);
 		this.setFont(new Font("Arial", Font.BOLD, 50));
 		this.setHorizontalAlignment(CENTER);
+		this.setOpaque(true);
 	}
 
 	@Override
