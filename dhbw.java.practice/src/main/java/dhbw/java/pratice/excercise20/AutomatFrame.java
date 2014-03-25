@@ -1,4 +1,4 @@
-package dhbw.pratice.excercise20;
+package dhbw.java.pratice.excercise20;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -40,7 +40,6 @@ public class AutomatFrame extends JFrame {
 
 	public static void main(String[] args) {
 		new AutomatFrame();
-
 	}
 	
 	public class Listeners implements ActionListener {
