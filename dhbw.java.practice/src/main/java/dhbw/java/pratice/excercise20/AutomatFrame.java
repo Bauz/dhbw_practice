@@ -1,4 +1,4 @@
-package dhbw.pratice.excercise20;
+package dhbw.java.pratice.excercise20;
 
 import java.awt.Color;
 import java.awt.GridLayout;
