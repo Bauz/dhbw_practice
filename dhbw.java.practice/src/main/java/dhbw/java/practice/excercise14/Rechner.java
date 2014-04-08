@@ -47,7 +47,7 @@ public class Rechner extends JFrame {
 								.parseDouble(textParameter2.getText())));
 			}
 		});
-		btnAdd.setText("Addieren");
+		btnAdd.setText("Add");
 
 		JButton btnSub = new JButton();
 		btnSub.addActionListener(new ActionListener() {
@@ -61,7 +61,7 @@ public class Rechner extends JFrame {
 								.parseDouble(textParameter2.getText())));
 			}
 		});
-		btnSub.setText("Subtrahieren");
+		btnSub.setText("Sub");
 
 		JButton btnMul = new JButton();
 		btnMul.addActionListener(new ActionListener() {
@@ -75,7 +75,7 @@ public class Rechner extends JFrame {
 								.parseDouble(textParameter2.getText())));
 			}
 		});
-		btnMul.setText("Multiplizieren");
+		btnMul.setText("Mul");
 
 		JButton btnDiv = new JButton();
 		btnDiv.addActionListener(new ActionListener() {
@@ -93,7 +93,7 @@ public class Rechner extends JFrame {
 				}
 			}
 		});
-		btnDiv.setText("Dividieren");
+		btnDiv.setText("Div");
 
 		JButton btnDeleteAll = new JButton();
 		btnDeleteAll.addActionListener(new ActionListener() {
@@ -107,7 +107,7 @@ public class Rechner extends JFrame {
 				textParameter2.setText("");
 			}
 		});
-		btnDeleteAll.setText("Alles Löschen");
+		btnDeleteAll.setText("Clear");
 
 		this.setLayout(new GridLayout(2, 5));
 		this.add(textParameter1);
@@ -121,7 +121,7 @@ public class Rechner extends JFrame {
 		this.add(btnDiv);
 		this.add(btnDeleteAll);
 		this.setSize(500, 100);
-        this.setTitle("Rechner");
+		this.setTitle("Calculator");
         this.setVisible(true);
 		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
