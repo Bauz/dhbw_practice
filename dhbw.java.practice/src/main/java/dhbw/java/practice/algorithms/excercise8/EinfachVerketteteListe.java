@@ -1,5 +1,6 @@
 package dhbw.java.practice.algorithms.excercise8;
 
+
 public class EinfachVerketteteListe<T> {
 	
 
@@ -24,7 +25,9 @@ public class EinfachVerketteteListe<T> {
 		while (local != pos) {
 			local = local.next;
 		}
-		local = new ElementL(o);
+		ElementL<T> puffer = new ElementL(o);
+		puffer.next = local.next;
+		local = puffer;
 		return local;
 	}
 
