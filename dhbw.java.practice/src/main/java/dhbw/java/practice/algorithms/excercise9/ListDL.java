@@ -3,6 +3,7 @@ package dhbw.java.practice.algorithms.excercise9;
 
 
 public class ListDL<T> {
+
 	static class ElementDL<E> {
 		private E element;// Inhalt des Listenelements
 		private ElementDL<E> next; // Verweis auf Nachfolger
