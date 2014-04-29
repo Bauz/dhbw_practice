@@ -1,7 +1,5 @@
 package dhbw.java.practice.algorithms.excercise9;
 
-
-
 public class ListDL<T> {
 
 	static class ElementDL<E> {
@@ -18,12 +16,12 @@ public class ListDL<T> {
 
 	private ElementDL<T> head; // Referenz auf Anfang der Liste
 	private ElementDL<T> tail; // Referenz auf Ende der Liste
-	
+
 	public ElementDL<T> insert(T o) {
 		tail.next = new ElementDL(o);
 		tail = tail.next;
 		return tail;
-		}
+	}
 
 	public ElementDL<T> insert(T o, ElementDL<T> pos) {
 		ElementDL<T> local = head;
@@ -42,6 +40,7 @@ public class ListDL<T> {
 			local = local.next;
 		}
 		local.next = e.next;
+		local.prev = e.prev;
 	}
 
 	@Override
